@@ -13,10 +13,10 @@ This project mimicked and earlier project that set up a publisher and subscriber
 
  <img src='./img/lab19-1.png' width='100%' height='auto'>
 
- - After the the notifications have started, start the driver's message queue by going into the driver directory and use the command ```node driverMessges.js```. It will get the message notification. The driver will stop listening while he delivers the package (timeout set for 10 seconds). After the package is delivered, the driver will publish a message to the vendors queue that the package has been delivered and the driver will start listening to messages again. The next message in the queue will start this all over again.
+ - After the the notifications have started, start the driver's message queue by going into the driver directory and use the command ```node driverMessages.js```. It will get the first message notification from the queue. The driver will stop listening while he delivers the package (timeout set for 10 seconds). After the package is delivered, the driver will publish a message to the vendors queue that the package has been delivered and the driver will start listening to messages again. The next message in the queue will start this all over again.
 
  <img src='./img/lab19-2.png' width='100%' height='auto'>
 
- - After the driver finishes delivering packages, go into the vendor directory and use the command ```vendorMessages```. The vendors delivered notifications will log to the console.
+ - After the driver finishes delivering packages, go into the vendor directory and use the command ```node vendorMessages.js```. The vendors delivered notifications will log to the console.
 
  <img src='./img/lab19-3.png' width='100%' height='auto'>
